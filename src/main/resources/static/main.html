@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/misFunciones.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+<h1>Maquinas Disponibles</h1>
+<div id="maquinas"> </div>
+<button onclick="traerMaquinas()"> Consultar </button>
+
+<div>
+  <input type="text" id="brand" placeholder="brand">
+  <input type="number" id="year" placeholder="year">
+  <input type="text" id="description" placeholder="descripcion">
+  <input type="number" id="category" placeholder="category_id">
+  <input type="text" id="name" placeholder="name">
+</div>
+
+<button onclick="guardarMaquina()">Guardar!</button>
+<button onclick="editarInformacion()">Actualizar!</button>
+
+<h1>Clientes</h1>
+<div id="clientes"></div>
+<button onclick="traerClientes()">Consultar</button>
+
+<div>
+  <input type="number" id="idc" placeholder="id">
+  <input type="text" id="namec" placeholder="name">
+  <input type="text" id="email" placeholder="email">
+  <input type="number" id="age" placeholder="age">
+</div>
+
+<button onclick="guardarCliente()">Guardar!</button>
+<button onclick="editarCliente()">Actualizar!</button>
+
+<h1>Mensajes</h1>
+<div id="mensajes"></div>
+<button onclick="traerMensajes()">Consultar</button>
+
+<div>
+  <input type="numer" id="idm" placeholder="id">
+  <input type="text" id="message" placeholder="message"> 
+</div>
+
+<button onclick="guardarMensaje()">Guardar!</button>
+<button onclick="editarMensaje()">Actualizar!</button>
+
+<h1>Categorias</h1>
+<div id="categorias"></div>
+<button onclick="traerCategorias()">Consultar</button>
+<div>
+  <input type="text" id="nameCateg" placeholder="Nombre Cateogria">
+  <input type="text" id="descripcionCateg" placeholder="Descripcion categoria">
+</div>
+
+</body>
+</html>
